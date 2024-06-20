@@ -12,7 +12,7 @@ class RegistrationForm extends Component {
   }
 
   onBlurLastName = () => {
-    const isValidLastName = this.isValidLastName()
+    const isValidLastName = this.validateLastName()
     this.setState({showLastNameError: !isValidLastName})
   }
 
@@ -50,7 +50,7 @@ class RegistrationForm extends Component {
   }
 
   onBlurFirstName = () => {
-    const isValidFirstName = this.isValidFirstName()
+    const isValidFirstName = this.validateFirstName()
 
     this.setState({showFirstNameError: !isValidFirstName})
   }
